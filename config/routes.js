@@ -1,3 +1,11 @@
+//bringing in the script function from the script directory
+var scrape = require("../scripts/scrape");
+
+//bringing in the headlines and notes from the controller directory
+var headlinesController = require("../controllers/headlines");
+
+var notesController = require("../controllers/notes")
+
 module.exports = function(router) {
     //this route is for the homepage
     router.get("/", function(req, res) {

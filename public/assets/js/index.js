@@ -1,4 +1,4 @@
-import { MongooseDocument } from "mongoose";
+// import { MongooseDocument } from "mongoose";
 
 $(document).ready(function() {
      var articleContainer = $(".article-container");

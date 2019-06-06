@@ -16,7 +16,7 @@ module.exports = {
                 articles[i].saved = false;
             }
             //mongo function, not mongoose
-            Headline.collection.insertMany(articles, {ordered:false}, function(err, doc) {
+            Headline.collection.insertMany(articles, {ordered:false}, function(err, docs) {
                 cb(err, docs);
             });
         });
@@ -29,7 +29,7 @@ module.exports = {
         .sort({
             _id: -1
         })
-        .exec(function(query, cb) {
+        .exec(function(err, doc) {
             cb(doc);
         });
     },
