@@ -161,5 +161,4 @@ $(document).ready(function() {
             bootbox.hideAll();
         });
     }
-
 });
